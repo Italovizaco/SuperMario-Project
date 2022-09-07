@@ -1,0 +1,97 @@
+:root {
+    --border-color: rgba(0, 170, 193, 1);
+    --syleback-color: rgba(255, 255, 255, 1)
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(47, 47, 47, 1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 100vw;
+    height: 1024px;
+    background-color: rgba(47, 47, 47, 1);
+    align-items: center;
+    padding: 5px;
+}
+
+.box1 {
+    width: 206px;
+    height: 206px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.box-text {
+    width: 271px;
+    height: 77px;
+    margin-bottom: 54px;
+    text-align: center;
+    color: var(--border-color);
+    font-size: 26px;
+}
+
+.box2,
+.box3,
+.box4,
+.box5 {
+    border: 2px solid var(--border-color);
+    width: 427px;
+    height: 72px;
+    border-radius: 20px;
+    margin-bottom: 21px;
+    text-align: center;
+    color: var(--border-color);
+    background-color: var(--syleback-color);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+
+}
+
+.box6 {
+    width: 400px;
+    height: 72px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: var(--border-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.change-color:hover {
+    background-color: var(--styleback-color)
+}
+
+.change-scale:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--border-color);
+    text-shadow:
+        -1px -1px 0px black,
+        -1px 1px 0px black,
+        1px -1px 0px black,
+        1px 0px 0px black;
+}
+
+
+.img-360-degrees:hover{
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
